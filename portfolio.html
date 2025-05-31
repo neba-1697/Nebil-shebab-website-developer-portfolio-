@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website | Nebil Shebab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .portfolio-hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #f8f9fe 50%, #5e72e4 50%);
+        }
+        
+        .portfolio-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: #825ee4;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .portfolio-section {
+            padding: 80px 0;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .portfolio-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .portfolio-image {
+            height: 200px;
+            background: #825ee4;
+        }
+        
+        .portfolio-info {
+            padding: 20px;
+        }
+        
+        .portfolio-footer {
+            background: #2d3748;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../../index.html" class="logo">Portfolio<span>Pro</span></a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Nebil Shebab</h1>
+                    <p>Self-taught web developer specializing in creating beautiful, functional websites that help businesses thrive online.</p>
+                    <a href="#" class="btn">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar">NS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Work</h2>
+                <p>Recent projects I've created</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">Project 1</div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Store</h3>
+                        <p>Fully responsive online store with cart functionality</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">Project 2</div>
+                    <div class="portfolio-info">
+                        <h3>Travel Blog</h3>
+                        <p>Beautiful travel blog with interactive map features</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">Project 3</div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Website</h3>
+                        <p>Online menu and reservation system</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials portfolio-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What people say about my work</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <p>"Nebil transformed our online presence. His attention to detail and understanding of our business needs resulted in a website that perfectly represents our brand."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">TM</div>
+                    <div>
+                        <h4>Tesfaye Mulatu</h4>
+                        <p>Founder, Ethiopian Crafts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-footer">
+        <div class="container">
+            <h3>Let's work together</h3>
+            <p>Have a project in mind? I'd love to hear about it</p>
+            <a href="#" class="btn">Get in Touch</a>
+            <div class="footer-bottom">
+                <p>© 2025 Nebil Shebab. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

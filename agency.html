@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency | Nebil Shebab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .agency-hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #5e72e4, #825ee4);
+            color: white;
+            text-align: center;
+        }
+        
+        .agency-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .agency-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .services {
+            padding: 80px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: #5e72e4;
+            margin-bottom: 20px;
+        }
+        
+        .portfolio-gallery {
+            padding: 80px 0;
+            background: #f8f9fe;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .gallery-item {
+            height: 250px;
+            background: #825ee4;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .team {
+            padding: 80px 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .member-avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #5e72e4;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .newsletter {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #5e72e4, #825ee4);
+            color: white;
+            text-align: center;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+        }
+        
+        .newsletter input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 30px 0 0 30px;
+        }
+        
+        .agency-footer {
+            background: #2d3748;
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #5e72e4;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../../index.html" class="logo">Digital<span>Agency</span></a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="agency-hero">
+        <div class="container">
+            <h1>We Build Brands Online</h1>
+            <p>Digital solutions that drive growth and create memorable brand experiences for your customers.</p>
+            <a href="#" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>What we offer to grow your business</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, responsive websites that engage your audience and convert visitors.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>SEO Optimization</h3>
+                    <p>Increase your visibility and rank higher in search engine results.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Digital Strategy</h3>
+                    <p>Data-driven strategies to achieve your business goals online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
+                <p>Recent work we're proud of</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">Project 1</div>
+                <div class="gallery-item">Project 2</div>
+                <div class="gallery-item">Project 3</div>
+                <div class="gallery-item">Project 4</div>
+                <div class="gallery-item">Project 5</div>
+                <div class="gallery-item">Project 6</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+                <p>Meet the experts behind your success</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">NS</div>
+                    <h3>Nebil Shebab</h3>
+                    <p>Lead Developer</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">AA</div>
+                    <h3>Abebe Alemu</h3>
+                    <p>Design Director</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">SM</div>
+                    <h3>Selamawit Mulu</h3>
+                    <p>Marketing Strategist</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">TG</div>
+                    <h3>Tesfaye Girma</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest digital trends</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="agency-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Digital Agency</h3>
+                    <p>Creating digital experiences that connect brands with their audience.</p>
+                </div>
+                
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Addis Ababa, Ethiopia</p>
+                    <p>contact@digitalagency.com</p>
+                    <p>+251 912 345 678</p>
+                </div>
+                
+                <div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">ig</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Digital Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

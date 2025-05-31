@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Landing Page | Nebil Shebab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .demo-hero {
+            background: linear-gradient(135deg, #5e72e4, #825ee4);
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .demo-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .demo-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .features {
+            padding: 80px 0;
+            background: #f8f9fe;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #5e72e4;
+            margin-bottom: 20px;
+        }
+        
+        .testimonials {
+            padding: 80px 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .pricing {
+            padding: 80px 0;
+            background: #f8f9fe;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid #5e72e4;
+        }
+        
+        .pricing-card.popular::before {
+            content: 'POPULAR';
+            position: absolute;
+            top: 15px;
+            right: -35px;
+            background: #5e72e4;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #5e72e4;
+            margin: 20px 0;
+        }
+        
+        .demo-footer {
+            background: #2d3748;
+            color: white;
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../../index.html" class="logo">Business<span>Pro</span></a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="demo-hero">
+        <div class="container">
+            <h1>Grow Your Business With Us</h1>
+            <p>We provide innovative solutions to help your business thrive in the digital world. Our tools are designed to boost your growth and maximize your potential.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Everything you need to succeed</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Growth Strategy</h3>
+                    <p>Custom strategies tailored to your business goals and market position.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites that convert visitors into customers.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Targeted campaigns to reach your audience and drive results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our customers say about us</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <p>"BusinessPro helped us increase our online sales by 150% in just three months. Their strategic approach and technical expertise were exactly what we needed."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AM</div>
+                    <div>
+                        <h4>Abebe Mekonnen</h4>
+                        <p>CEO, Ethiopian Enterprises</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <p>"The website they built for us not only looks amazing but also performs exceptionally well. Our conversion rates have never been higher!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SA</div>
+                    <div>
+                        <h4>Selamawit Abebe</h4>
+                        <p>Marketing Director, Addis Tech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Simple Pricing</h2>
+                <p>Choose the plan that works for you</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$49<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>5 Page Website</li>
+                        <li>Basic SEO Setup</li>
+                        <li>Mobile Responsive</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <h3>Professional</h3>
+                    <div class="price">$99<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>10 Page Website</li>
+                        <li>Advanced SEO</li>
+                        <li>E-commerce Functionality</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$199<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Unlimited Pages</li>
+                        <li>Full SEO Package</li>
+                        <li>Custom Web Applications</li>
+                        <li>24/7 Dedicated Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-footer">
+        <div class="container">
+            <h3>Ready to grow your business?</h3>
+            <p>Contact us today for a free consultation</p>
+            <a href="#" class="btn">Contact Us</a>
+            <div class="footer-bottom">
+                <p>© 2025 BusinessPro. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
